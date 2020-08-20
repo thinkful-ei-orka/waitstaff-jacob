@@ -1,38 +1,86 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+.waitstaff_calculator {
+
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.input_row {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.meal_form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+}
+
+#title, .meal_title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.meal_details {
+  height: 300px;
+  margin-left: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#error_text { 
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.charges_earnings {
+  margin-left: 25px;
+}
+
+.earnings_info_box {
+  margin-top: 50px;
+  margin-right: 25%;
+  margin-left: auto;
+
+}
+
+#reset_button {
+  margin-bottom: 25px;
+}
+
+.meal_details, .customer_charges_box, .earnings_info_box {
+  display: inline-block;
+  border: 1px solid black;
+  width: 350px; 
+  padding-bottom: 50px;
+}
+.meal_title, .charges_title, .earnings_info {
+  padding-bottom: 25px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.summary {
+  margin-left: 25px;
+}
+
+#tip {
+  padding-bottom: 10px;
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+input, label {
+  width: 130px;
+}
+
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tip_percentage, #tax_rate {
+  width: 40px;
+  margin-right: 100px;
 }
